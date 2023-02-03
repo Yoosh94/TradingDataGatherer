@@ -70,8 +70,6 @@ await uploader.Upload(dataToUpload);
 
 static IHostBuilder CreateHostBuilder(string[] args)
 {
-    // https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/generic-host?view=aspnetcore-7.0#default-builder-settings
-    // We will load env varaibles which start with DOTNET. I will put all secrets into Env variables.
     var hostBuilder = Host.CreateDefaultBuilder(args)
         .ConfigureAppConfiguration((context, builder) =>
         {
